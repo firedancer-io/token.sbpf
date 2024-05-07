@@ -91,7 +91,7 @@
 # Imports
 
 .extern sol_log_
-.extern beach
+.extern entrypoint_ex
 
 # Code
 
@@ -267,8 +267,6 @@ overflow:
     exit
 
 # Trampoline to slow path
-
-.extern entrypoint_ex
 
 beach:
     r1 = 0x400000000 ll
